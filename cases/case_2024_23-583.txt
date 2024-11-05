@@ -1,5 +1,16 @@
+JUSTIA
+https://supreme.justia.com/cases/federal/us/2024/23-583 /
+
 TITLE
 Bouarfa v. Mayorkas
+
+SYLLABUS VALUE
+None
+SYLLABUS LINK
+None
+
+OYEZ URL
+https://www.oyez.org/cases/2024/23-583
 
 CONTENT
 <p>In 2014, Amina Bouarfa, a U.S. citizen, submitted Form I-130 to petition for her husband, Ala’a Hamayel, to be classified as her immediate relative under the Immigration and Nationality Act. The Secretary approved the petition in 2015 but later notified Bouarfa of an intent to revoke the approval, stating that Hamayel had entered into a previous marriage solely to evade immigration laws. Despite Bouarfa’s response, the Secretary revoked the approval, and Bouarfa’s appeal to the Board of Immigration Appeals was unsuccessful.</p>
@@ -23,12 +34,35 @@ DOCKET NUMBER
 23-583 
 
 DECIDED BY
-
+None
 
 LOWER COURT
 United States Court of Appeals for the Eleventh Circuit
 
 CITATION TEXT
-
+None
 CITATION URL
+None
 
+GRANTED
+04/29/2024
+
+ARGUED
+10/15/2024
+
+DECIDED
+None
+
+ADVOCATE NAME
+Samir Deger-Sen
+ADVOCATE LINK
+https://www.oyez.org/advocates/samir_deger_sen
+ADVOCATE DESCRIPTION
+for the Petitioner
+
+ADVOCATE NAME
+Colleen E. Roh Sinzdak
+ADVOCATE LINK
+https://www.oyez.org/advocates/colleen_e_roh_sinzdak
+ADVOCATE DESCRIPTION
+for the Respondents

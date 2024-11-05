@@ -1,19 +1,20 @@
+JUSTIA
+https://supreme.justia.com/cases/federal/us/575/348/
+
 TITLE
 Rodriguez v. United States
 
-VALUE
+SYLLABUS VALUE
 Syllabus
-LINK
+SYLLABUS LINK
 https://supreme.justia.com/cases/federal/us/575/13-9972/
 
 OYEZ URL
 https://www.oyez.org/cases/2014/13-9972
 
-JUSTICE
+DELIVERED BY
 Ruth Bader Ginsburg
-TYPE OF OPINION
-Opinion of the Court
-LINK
+MAJORITY LINK
 https://supreme.justia.com/cases/federal/us/575/13-9972/
 
 JUSTICE
@@ -70,3 +71,26 @@ CITATION TEXT
 575 US __ (2015)
 CITATION URL
 https://supreme.justia.com/cases/federal/us/575/13-9972/
+
+GRANTED
+12/02/2014
+
+ARGUED
+01/21/2015
+
+DECIDED
+04/21/2015
+
+ADVOCATE NAME
+Shannon P. O'Connor
+ADVOCATE LINK
+https://www.oyez.org/advocates/shannon_p_oconnor
+ADVOCATE DESCRIPTION
+for the petitioner
+
+ADVOCATE NAME
+Ginger D. Anders
+ADVOCATE LINK
+https://www.oyez.org/advocates/ginger_d_anders
+ADVOCATE DESCRIPTION
+for the respondent

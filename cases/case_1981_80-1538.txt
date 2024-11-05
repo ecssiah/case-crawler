@@ -1,27 +1,21 @@
+JUSTIA
+https://supreme.justia.com/cases/federal/us/457/202/
+
 TITLE
 Plyler v. Doe
 
-VALUE
+SYLLABUS VALUE
 Syllabus
-LINK
+SYLLABUS LINK
 https://supreme.justia.com/cases/federal/us/457/202/
 
 OYEZ URL
 https://www.oyez.org/cases/1981/80-1538
 
-JUSTICE
-
-TYPE OF OPINION
-
-LINK
-
-
-JUSTICE
+DELIVERED BY
 None
-TYPE OF OPINION
+MAJORITY LINK
 None
-LINK
-https://supreme.justia.com/cases/federal/us/457/202/case.html
 
 CONTENT
 <p>A revision to the Texas education laws in 1975 allowed the state to withhold from local school districts state funds for educating children of illegal aliens. This case was decided together with Texas v. Certain Named and Unnamed Alien Child.</p>
@@ -54,3 +48,40 @@ CITATION TEXT
 457 US 202 (1982)
 CITATION URL
 https://supreme.justia.com/cases/federal/us/457/80-1538/
+
+GRANTED
+None
+
+ARGUED
+12/01/1981
+
+DECIDED
+06/15/1982
+
+ADVOCATE NAME
+Peter D. Roos
+ADVOCATE LINK
+https://www.oyez.org/advocates/peter_d_roos
+ADVOCATE DESCRIPTION
+Argued the cause for the appellees in Plyler v. Doe
+
+ADVOCATE NAME
+Peter A. Schey
+ADVOCATE LINK
+https://www.oyez.org/advocates/peter_a_schey
+ADVOCATE DESCRIPTION
+Argued the cause for appellees in the related case
+
+ADVOCATE NAME
+John C. Hardy
+ADVOCATE LINK
+https://www.oyez.org/advocates/john_c_hardy
+ADVOCATE DESCRIPTION
+Argued the cause for the appellants in Plyler v. Doe
+
+ADVOCATE NAME
+Richard L. Arnett
+ADVOCATE LINK
+https://www.oyez.org/advocates/richard_l_arnett
+ADVOCATE DESCRIPTION
+Argued the cause for appellants in the related case
