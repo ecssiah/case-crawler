@@ -25,7 +25,7 @@ def parse_url() -> Any:
 
 
 def process_case_data(details: Dict[str, str]):
-    case_obj = oyez_api_wrapper.court_case(term=details['term'], docket=details['docket'])
+    case_obj = oyez_api_wrapper.court_case(details['term'], details['docket'])
 
     case_obj.download_court_json('')
 
@@ -113,12 +113,15 @@ def format_opinions(case_data: Dict, case_info: List[str]) -> None:
 def format_body(case_data: Dict[str, Any], case_info: List[str]) -> None:
     case_info.append('CONTENT')
     case_info.append(f'{case_data['facts_of_the_case']}')
+    case_info.append('')
 
     case_info.append('QUESTION')
     case_info.append(f'{case_data['question']}')
+    case_info.append('')
 
     case_info.append('CONCLUSION')
     case_info.append(f'{case_data['conclusion']}')
+    case_info.append('')
 
 
 def format_case_meta(case_data: Dict[str, Any], case_info: List[str]) -> None:
@@ -148,13 +151,27 @@ def format_case_meta(case_data: Dict[str, Any], case_info: List[str]) -> None:
         case_info.append(f'{case_data['lower_court']['name']}')
     case_info.append('')
 
-    case_info.append('CITATION TEXT')
+    if case_data['citation']['volume']:
+        case_info.append('CITATION TEXT')
 
-    case_info.append('')
+        volume = case_data['citation']['volume']
+        page = case_data['citation']['page'] if case_data['citation']['page'] else '__'
+        year = case_data['citation']['year'] if case_data['citation']['year'] else ''
 
-    case_info.append('CITATION LINK')
+        if year != '':
+            case_info.append(f'{volume} US {page} ({year})')
+        else:
+            case_info.append(year)
 
-    case_info.append('')
+        case_info.append('CITATION URL')
+        case_info.append(f'https://supreme.justia.com/cases/federal/us/{volume}/{case_data['docket_number']}/')
+        case_info.append('')
+    else:
+        case_info.append('CITATION TEXT')
+        case_info.append('')
+        case_info.append('CITATION URL')
+        case_info.append('')
+        case_info.append('')
 
 
 def format_case_data(case_data: Dict[str, Any]) -> List[str]:

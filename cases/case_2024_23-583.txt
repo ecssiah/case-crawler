@@ -5,11 +5,14 @@ CONTENT
 <p>In 2014, Amina Bouarfa, a U.S. citizen, submitted Form I-130 to petition for her husband, Ala’a Hamayel, to be classified as her immediate relative under the Immigration and Nationality Act. The Secretary approved the petition in 2015 but later notified Bouarfa of an intent to revoke the approval, stating that Hamayel had entered into a previous marriage solely to evade immigration laws. Despite Bouarfa’s response, the Secretary revoked the approval, and Bouarfa’s appeal to the Board of Immigration Appeals was unsuccessful.</p>
 <p>Bouarfa sued in the U.S. District Court for the Middle District of Florida, challenging the officials’ actions as arbitrary and capricious. The Secretary and Director moved to dismiss the complaint, arguing that the revocation decision was unreviewable because it was a discretionary action. The district court granted the motion, concluding that while the action was based on nondiscretionary criteria, the action itself was discretionary and thus that the court lacked subject-matter jurisdiction to review the decision. The U.S. Court of Appeals for the Eleventh Circuit affirmed.</p>
 
+
 QUESTION
 <p>May a visa petitioner obtain judicial review when an approved petition is revoked on the basis of nondiscretionary criteria?</p>
 
+
 CONCLUSION
 None
+
 PETITIONER
 Amina Bouarfa
 
@@ -27,4 +30,5 @@ United States Court of Appeals for the Eleventh Circuit
 
 CITATION TEXT
 
-CITATION LINK
+CITATION URL
+

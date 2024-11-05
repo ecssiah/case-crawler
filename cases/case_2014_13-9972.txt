@@ -41,12 +41,15 @@ CONTENT
 <p>On March 27, 2012, a Nebraska K-9 police officer pulled over a vehicle driven by Dennys Rodriguez after his vehicle veered onto the shoulder of the highway. The officer issued a written warning and then asked if he could walk the K-9 dog around Rodriguez's vehicle. Rodriguez refused, but the officer instructed him to exit the vehicle and then walked the dog around the vehicle. The dog alerted to the presence of drugs, and a large bag of methamphetamine was found.</p>
 <p>Rodriguez moved to suppress the evidence found in the search, claiming the dog search violated his Fourth Amendment right to be free from unreasonable seizures. The district court denied the motion. On appeal, the United States Court of Appeals for the Eighth Circuit affirmed, holding the search was constitutional because the brief delay before employing the dog did not unreasonably prolong the otherwise lawful stop.</p>
 
+
 QUESTION
 <p>Is the use of a K-9 unit, after the conclusion of a traffic stop and without reasonable suspicion of criminal activity, a violation of the Fourth Amendment prohibition on unreasonable search and seizures?</p>
+
 
 CONCLUSION
 <p>Yes. Justice Ruth Bader Ginsburg delivered the opinion for the 6-3 majority. The Court held that the use of a K-9 unit after the completion of an otherwise lawful traffic stop exceeded the time reasonably required to handle the matter and therefore violated the Fourth Amendment’s prohibition against unreasonable searches and seizures. Because the mission of the stop determines its allowable duration, the authority for the stop ends when the mission has been accomplished. The Court held that a seizure unrelated to the reason for the stop is lawful only so long as it does not measurably extend the stop’s duration. Although the use of a K-9 unit may cause only a small extension of the stop, it is not fairly characterized as connected to the mission of an ordinary traffic stop and is therefore unlawful.</p>
 <p>Justice Clarence Thomas wrote a dissent in which he argued that the use of a K-9 unit at the conclusion of an otherwise lawful traffic stop did not violate the Fourth Amendment as long as it was conducted reasonably, which this one was. Justice Thomas also argued that the rule announced in the majority’s opinion would result in arbitrary enforcement of Fourth Amendment protections and created artificial lines between common police practices at traffic stops. Additionally, there was no Fourth Amendment violation in this case because the police officer had a reasonable suspicion to continue to hold Rodriguez and use the K-9 unit. Justice Samuel A. Alito, Jr., and Justice Anthony M. Kennedy joined in the dissent. In his separate dissent, Justice Kennedy noted that the appellate court did not address the issue of whether the officer had a reasonable suspicion to use the K-9 unit, and that court should be allowed to do so. Justice Alito also wrote a separate dissent in which he argued that the majority opinion’s analysis was arbitrary because it relied on the order in which the officer conducted his inquiries.</p>
+
 
 PETITIONER
 Dennys Rodriguez
@@ -62,3 +65,8 @@ Roberts Court (2010-2016)
 
 LOWER COURT
 United States Court of Appeals for the Eighth Circuit
+
+CITATION TEXT
+575 US __ (2015)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/575/13-9972/
