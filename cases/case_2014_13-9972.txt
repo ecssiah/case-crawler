@@ -1,8 +1,8 @@
-JUSTIA
-https://supreme.justia.com/cases/federal/us/575/348/
-
 TITLE
 Rodriguez v. United States
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/575/348/
 
 SYLLABUS VALUE
 Syllabus

@@ -1,0 +1,99 @@
+TITLE
+Snyder v. United States
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/603/23-108/
+
+SYLLABUS VALUE
+Syllabus
+SYLLABUS LINK
+https://supreme.justia.com/cases/federal/us/603/23-108/
+
+OYEZ URL
+https://www.oyez.org/cases/2023/23-108
+
+DELIVERED BY
+Brett M. Kavanaugh
+OPINION OF THE COURT
+https://supreme.justia.com/cases/federal/us/603/23-108/
+
+JUSTICE
+Neil M. Gorsuch
+TYPE OF OPINION
+Concurring opinion
+LINK
+https://supreme.justia.com/cases/federal/us/603/23-108/
+
+JUSTICE
+Ketanji Brown Jackson
+TYPE OF OPINION
+Dissenting opinion
+LINK
+https://supreme.justia.com/cases/federal/us/603/23-108/
+
+CONTENT
+<p>James Snyder formerly served as mayor of Portage, Indiana. He was convicted of federal funds bribery in violation of 18 U.S.C. § 666(a)(1)(B) for soliciting and accepting $13,000 in connection with the city’s purchases of garbage trucks, among other federal crimes.</p>
+<p>Before, during, and after trial, Snyder argued that the evidence did not support a finding that there was an agreement to exchange money for the truck contracts before they were awarded. Without a prior quid pro quo agreement, he argued, § 666 cannot apply. Interpreting the plain language of the statute and Sixth Circuit precedent, the district court rejected his interpretation of that provision. The U.S. Court of Appeals for the Sixth Circuit affirmed.</p>
+
+
+QUESTION
+<p>Does 18 U.S.C. § 666(a)(1)(B) criminalize gratuities, i.e., payments in recognition of actions a state or local official has already taken or committed to take, without any quid pro quo agreement to take those actions?</p>
+
+
+CONCLUSION
+<p>Federal law, 18 U.S.C. §666, proscribes bribes to state and local officials but does not make it a crime for those officials to accept gratuities for their past acts. Justice Brett Kavanaugh authored the 6-3 majority opinion of the Court.</p>
+<p>The Court identified six main reasons that 18 U.S.C. §666(a)(1)(B) is a bribery statute and not a gratuities statute:</p>
+<p>   a) Text: The language of §666 closely resembles the federal bribery statute (§201(b)) rather than the federal gratuities statute (§201(c)).</p>
+<p>   b) Statutory history: Congress amended §666 in 1986 to model it after the bribery statute, not the gratuities statute.</p>
+<p>   c) Statutory structure: Unlike other laws, §666 does not separate bribery and gratuities into distinct provisions.</p>
+<p>   d) Statutory punishments: The penalties in §666 align with those for bribery, not gratuities, and would create inexplicable sentencing disparities if applied to gratuities.</p>
+<p>   e) Federalism: Interpreting §666 as a gratuities statute would significantly infringe on states' rights to regulate their officials' conduct.</p>
+<p>   f) Fair notice: The government's interpretation would create ambiguity and potentially criminalize innocuous behavior without clear guidelines for state and local officials.</p>
+<p>The Court rejected the government's argument that the inclusion of the term "rewarded" in §666 indicates it covers gratuities. Rather, the word "rewarded" serves to close potential loopholes in bribery cases.</p>
+<p>Because §666 prohibits bribes but not gratuities, state and local governments may choose whether and how to regulate gratuities for their officials within constitutional bounds.</p>
+<p>Justice Neil Gorsuch joined the Court’s opinion in full and wrote a separate concurrence.</p>
+<p>Justice Ketanji Brown Jackson authored a dissenting opinion, in which Justices Sonia Sotomayor and Elena Kagan joined.</p>
+
+
+PETITIONER
+James E. Snyder
+
+RESPONDENT
+United States of America
+
+DOCKET NUMBER
+23-108 
+
+DECIDED BY
+Roberts Court (2022-)
+
+LOWER COURT
+United States Court of Appeals for the Seventh Circuit
+
+CITATION TEXT
+603 US __ (2024)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/603/23-108 /
+
+GRANTED
+12/13/2023
+
+ARGUED
+04/15/2024
+
+DECIDED
+06/26/2024
+
+ADVOCATE NAME
+Lisa S. Blatt
+ADVOCATE LINK
+https://www.oyez.org/advocates/lisa_s_blatt
+ADVOCATE DESCRIPTION
+for the Petitioner
+
+ADVOCATE NAME
+Colleen E. Roh Sinzdak
+ADVOCATE LINK
+https://www.oyez.org/advocates/colleen_e_roh_sinzdak
+ADVOCATE DESCRIPTION
+for the Respondent

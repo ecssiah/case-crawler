@@ -1,8 +1,8 @@
-JUSTIA
-https://supreme.justia.com/cases/federal/us/457/202/
-
 TITLE
 Plyler v. Doe
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/457/202/
 
 SYLLABUS VALUE
 Syllabus
@@ -53,10 +53,10 @@ GRANTED
 None
 
 ARGUED
-12/01/1981
+01-12-1981
 
 DECIDED
-06/15/1982
+15-06-1982
 
 ADVOCATE NAME
 Peter D. Roos

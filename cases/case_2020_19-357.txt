@@ -1,0 +1,90 @@
+TITLE
+City of Chicago v. Fulton
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/592/19-357/
+
+SYLLABUS VALUE
+Syllabus
+SYLLABUS LINK
+https://supreme.justia.com/cases/federal/us/592/19-357/
+
+OYEZ URL
+https://www.oyez.org/cases/2020/19-357
+
+DELIVERED BY
+Samuel A. Alito, Jr.
+OPINION OF THE COURT
+https://supreme.justia.com/cases/federal/us/592/19-357/
+
+JUSTICE
+Sonia Sotomayor
+TYPE OF OPINION
+Concurring opinion
+LINK
+https://supreme.justia.com/cases/federal/us/592/19-357/
+
+CONTENT
+<p>The City of Chicago towed and impounded the Robbin Fulton’s vehicle for a prior citation of driving on a suspended license. Fulton filed a Chapter 13 bankruptcy action treating the City as an unsecured creditor. The City filed an unsecured proof of claim, and the bankruptcy court confirmed Fulton’s plan. The City then amended its proof of claim and asserted its status as a secured creditor. It refused to return Fulton’s vehicle, and Fulton filed a motion for sanctions against the City.</p>
+<p>The bankruptcy court held that the City was obligated to return the vehicle under <em>Thompson v. General Motors Acceptance Corp.</em>, 566 F.3d 699 (7th Cir. 2009), a binding case in which the Seventh Circuit had held that a creditor must comply with the automatic stay and return a debtor’s vehicle upon her filing of a bankruptcy petition. The City moved to stay the order in federal district court, and the court denied its request. The Seventh Circuit affirmed the lower court’s judgment denying the City's request.</p>
+
+
+QUESTION
+<p>Does the Bankruptcy Code’s automatic stay provision, 11 U.S.C § 362, require that an entity that is passively retaining possession of property in which a bankruptcy estate has an interest return that property to the debtor or trustee immediately upon the filing of the bankruptcy petition?</p>
+
+
+CONCLUSION
+<p>The Bankruptcy Code’s automatic stay provision, 11 U.S.C. § 362 prohibits only affirmative acts that would disturb the status quo of estate property at the time the bankruptcy petition was filed, not the mere passive retention of possession of the debtor’s property. Justice Samuel Alito authored the unanimous (8-0) opinion of the Court.</p>
+<p>Section 362(a)(3) provides that the filing of a bankruptcy petition operates as a “stay” of “any act” to “exercise control” over the property of the estate. The most natural understanding of that language is that it prohibits affirmative acts that would affect the estate property. To read it as the Respondents propose would render superfluous the § 542’s “central command”—that an entity in possession of certain estate property “shall deliver to the trustee … such property.” Additionally, the Respondents’ proposed interpretation would mean that § 362(a)(3) required turnover at the same time that § 542 exempted it.</p>
+<p>Justice Amy Coney Barrett took no part in the consideration or decision of the case.</p>
+
+
+PETITIONER
+City of Chicago, Illinois
+
+RESPONDENT
+Robbin L. Fulton, et al.
+
+DOCKET NUMBER
+19-357
+
+DECIDED BY
+Roberts Court (2020-2022)
+
+LOWER COURT
+United States Court of Appeals for the Seventh Circuit
+
+CITATION TEXT
+592 US __ (2021)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/592/19-357/
+
+GRANTED
+12/18/2019
+
+ARGUED
+10/13/2020
+
+DECIDED
+01/14/2021
+
+ADVOCATE NAME
+Craig Goldblatt
+ADVOCATE LINK
+https://www.oyez.org/advocates/craig_goldblatt
+ADVOCATE DESCRIPTION
+for the petitioner
+
+ADVOCATE NAME
+Colleen E. Roh Sinzdak
+ADVOCATE LINK
+https://www.oyez.org/advocates/colleen_e_roh_sinzdak
+ADVOCATE DESCRIPTION
+for the United States, as amicus curiae, supporting the petitioner
+
+ADVOCATE NAME
+Eugene R. Wedoff
+ADVOCATE LINK
+https://www.oyez.org/advocates/eugene_r_wedoff
+ADVOCATE DESCRIPTION
+for the respondents

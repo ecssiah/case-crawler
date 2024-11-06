@@ -1,8 +1,8 @@
-JUSTIA
-https://supreme.justia.com/cases/federal/us/2024/23-583 /
-
 TITLE
 Bouarfa v. Mayorkas
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/2024/23-583 /
 
 SYLLABUS VALUE
 None

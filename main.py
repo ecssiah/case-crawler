@@ -10,8 +10,7 @@ from urllib.parse import urlparse
 NONE_VALUE = 'None'
 
 
-def parse_url() -> Any:
-    url = sys.argv[1]
+def parse_url(url: str) -> Any:
     parsed_url = urlparse(url)
 
     url_parts = [part for part in parsed_url.path.split('/') if part]
@@ -28,7 +27,7 @@ def parse_url() -> Any:
         return None
 
 
-def process_case_data(details: Dict[str, str]):
+def process_case_data(details: Dict[str, str], delete_temp: bool = False):
     case_obj = oyez_api_wrapper.court_case(details['term'], details['docket'])
 
     case_obj.download_court_json('')
@@ -37,26 +36,26 @@ def process_case_data(details: Dict[str, str]):
 
     with open(case_json_path, 'r') as case_json_file:
         case_data = json.load(case_json_file)
-        case_info = format_case_data(case_data)
+        case_info = []
+        
+        format_case_data(case_data, case_info)
 
-        case_json_file_path = f'cases/case_{details['term']}_{details['docket']}.txt'
+        case_info_file_path = f'cases/case_{details['term']}_{details['docket']}.txt'
 
-        with open(case_json_file_path, 'w') as case_info_file:
+        with open(case_info_file_path, 'w') as case_info_file:
             case_info_file.write('\n'.join(case_info))
 
-        # if os.path.exists(case_json_path):
-        #     os.remove(case_json_path)
-
-        print(f'{case_data['name']} retrieved')
+        if delete_temp and os.path.exists(case_json_path):
+            os.remove(case_json_path)
 
 
 def format_basic_info(case_data: Dict, case_info: List[str]) -> None:
-    case_info.append('JUSTIA')
-    case_info.append(f'{case_data['justia_url']}')
-    case_info.append('')
-
     case_info.append('TITLE')
     case_info.append(f'{case_data['name']}')
+    case_info.append('')
+
+    case_info.append('JUSTIA')
+    case_info.append(f'{case_data['justia_url']}')
     case_info.append('')
 
 
@@ -109,7 +108,7 @@ def format_opinions(case_data: Dict, case_info: List[str]) -> None:
     if majority_result:
         case_info.append('DELIVERED BY')
         case_info.append(f'{majority_result['judge_full_name']}')
-        case_info.append('MAJORITY LINK')
+        case_info.append('OPINION OF THE COURT')
         case_info.append(f'{syllabus_result['justia_opinion_url']}')
 
         opinions.remove(majority_result)
@@ -202,7 +201,7 @@ def format_case_meta(case_data: Dict[str, Any], case_info: List[str]) -> None:
 
     if granted_result:
         case_info.append('GRANTED')
-        granted_date = datetime.fromtimestamp(granted_result['dates'][0]).strftime('%m/%d/%Y')
+        granted_date = datetime.fromtimestamp(granted_result['dates'][0]).strftime('%d-%m-%Y')
         case_info.append(f'{granted_date}')
     else:
         case_info.append('GRANTED')
@@ -217,7 +216,7 @@ def format_case_meta(case_data: Dict[str, Any], case_info: List[str]) -> None:
 
     if argued_result:
         case_info.append('ARGUED')
-        argued_date = datetime.fromtimestamp(argued_result['dates'][0]).strftime('%m/%d/%Y')
+        argued_date = datetime.fromtimestamp(argued_result['dates'][0]).strftime('%d-%m-%Y')
         case_info.append(f'{argued_date}')
     else:
         case_info.append('ARGUED')
@@ -232,7 +231,7 @@ def format_case_meta(case_data: Dict[str, Any], case_info: List[str]) -> None:
 
     if decided_result:
         case_info.append('DECIDED')
-        decided_date = datetime.fromtimestamp(decided_result['dates'][0]).strftime('%m/%d/%Y')
+        decided_date = datetime.fromtimestamp(decided_result['dates'][0]).strftime('%d-%m-%Y')
         case_info.append(f'{decided_date}')
     else:
         case_info.append('DECIDED')
@@ -253,22 +252,20 @@ def format_case_meta(case_data: Dict[str, Any], case_info: List[str]) -> None:
         case_info.append('')
 
 
-def format_case_data(case_data: Dict[str, Any]) -> List[str]:
-    case_info = []
-
+def format_case_data(case_data: Dict[str, Any], case_info: List[str]) -> None:
     format_basic_info(case_data, case_info)
     format_opinions(case_data, case_info)
     format_body(case_data, case_info)
     format_case_meta(case_data, case_info)
 
-    return case_info
-
 
 def main():
-    details = parse_url()
+    url = sys.argv[1]
+
+    details = parse_url(url)
 
     if details:
-        process_case_data(details)
+        process_case_data(details, True)
 
 
 if __name__ == '__main__':
