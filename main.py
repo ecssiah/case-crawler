@@ -1,47 +1,42 @@
 from datetime import datetime
 import json
 import sys
-from typing import Dict, List
+from typing import Dict, List, Tuple
 import os
 import oyez_api_wrapper
 from urllib.parse import urlparse
 
 
-DELETE_TEMP = False
+DELETE_TEMP = True
 NONE_STRING = 'No Value'
 
 
-def parse_url(url: str) -> Dict[str, str]:
+def parse_url(url: str) -> Tuple[str]:
     parsed_url = urlparse(url)
 
     url_parts = [part for part in parsed_url.path.split('/') if part]
 
     is_oyez_location = parsed_url.netloc == 'www.oyez.org'
     is_case_entry = len(url_parts) == 3 and url_parts[0] == 'cases'
+    is_valid = is_oyez_location and is_case_entry
 
-    if is_oyez_location and is_case_entry:
-        return {
-            'term': url_parts[1],
-            'docket': url_parts[2],
-        }
-    else:
-        return {
-            'term': '',
-            'docket': '',
-        }
+    term = url_parts[1] if is_valid else ''
+    docket = url_parts[2] if is_valid else ''
+
+    return term, docket
 
 
-def process_case(details: Dict[str, str]) -> None:
-    case_obj = oyez_api_wrapper.court_case(details['term'], details['docket'])
+def process_case(term: str, docket: str) -> None:
+    case_obj = oyez_api_wrapper.court_case(term, docket)
     case_obj.download_court_json('')
 
-    json_path = f'oyez_{details['term']}_{details['docket']}.json'
+    json_path = f'oyez_{term}_{docket}.json'
 
     with open(json_path, 'r') as json_file:
         case_json = json.load(json_file)
 
     case_data = get_case_data(case_json)
-    case_data_path = f'cases/case_{details['term']}_{details['docket']}.txt'
+    case_data_path = f'cases/case_{term}_{docket}.txt'
 
     with open(case_data_path, 'w') as case_data_file:
         case_data_file.write('\n'.join(case_data))
@@ -262,10 +257,10 @@ def format_case_meta(case_json: Dict[str, str], case_data: List[str]) -> None:
 def main() -> None:
     url = sys.argv[1]
 
-    details = parse_url(url)
+    term, docket = parse_url(url)
 
-    if details['term'] and details['docket']:
-        process_case(details)
+    if term and docket:
+        process_case(term, docket)
 
 
 if __name__ == '__main__':
