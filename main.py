@@ -40,7 +40,7 @@ def process_case(details: Dict[str, str]) -> None:
     with open(json_path, 'r') as json_file:
         case_json = json.load(json_file)
 
-    case_data = format_case_json(case_json)
+    case_data = get_case_data(case_json)
     case_data_path = f'cases/case_{details['term']}_{details['docket']}.txt'
 
     with open(case_data_path, 'w') as case_data_file:
@@ -50,7 +50,7 @@ def process_case(details: Dict[str, str]) -> None:
         os.remove(json_path)
 
 
-def format_case_json(case_json: Dict[str, str]) -> List[str]:
+def get_case_data(case_json: Dict[str, str]) -> List[str]:
     case_data = []
 
     format_case_info(case_json, case_data)
