@@ -1,0 +1,73 @@
+TITLE
+Ashcroft v. Free Speech Coalition
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/535/234/
+
+SYLLABUS VALUE
+Syllabus
+SYLLABUS LINK
+https://supreme.justia.com/cases/federal/us/535/234/
+
+OYEZ URL
+https://www.oyez.org/cases/2001/00-795
+
+DELIVERED BY
+None
+OPINION OF THE COURT
+None
+
+CONTENT
+<p>The Child Pornography Prevention Act of 1996 (CPPA) prohibits "any visual depiction, including any photograph, film, video, picture, or computer or computer-generated image or picture" that "is, or appears to be, of a minor engaging in sexually explicit conduct," and any sexually explicit image that is "advertised, promoted, presented, described, or distributed in such a manner that conveys the impression" it depicts "a minor engaging in sexually explicit conduct." The Free Speech Coalition, an adult-entertainment trade association, and others filed suit, alleging that the "appears to be" and "conveys the impression" provisions are overbroad and vague and, thus, restrain works otherwise protected by the First Amendment. Reversing the District Court, the Court of Appeals held the CPPA invalid on its face, finding it to be substantially overbroad because it bans materials that are neither obscene under Miller v. California, 413 U.S. 15, nor produced by the exploitation of real children as in New York v. Ferber, 458 U.S. 747.</p>
+
+
+QUESTION
+<p>Does the Child Pornography Prevention Act of 1996 abridge freedom of speech when it proscribes a significant universe of speech that is neither obscene under <em>Miller v. California</em> nor child pornography under <em>New York v. Ferber</em>?</p>
+
+
+CONCLUSION
+<p>Yes. In a 6-3 opinion delivered by Justice Anthony M. Kennedy, the Court held that the two prohibitions described above are overbroad and unconstitutional. The Court found the CPPA to be inconsistent with Miller insofar as the CPPA cannot be read to prohibit obscenity, because it lacks the required link between its prohibitions and the affront to community standards prohibited by the obscenity definition. Moreover, the Court found the CPPA to have no support in Ferber since the CPPA prohibits speech that records no crime and creates no victims by its production. Provisions of the CPPA cover "materials beyond the categories recognized in Ferber and Miller, and the reasons the Government offers in support of limiting the freedom of speech have no justification in our precedents or in the law of the First Amendment" and abridge "the freedom to engage in a substantial amount of lawful speech," wrote Justice Kennedy.</p>
+
+
+PETITIONER
+Ashcroft
+
+RESPONDENT
+Free Speech Coalition
+
+DOCKET NUMBER
+00-795
+
+DECIDED BY
+Rehnquist Court (1994-2005)
+
+LOWER COURT
+United States Court of Appeals for the Ninth Circuit
+
+CITATION TEXT
+535 US 234 (2002)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/535/00-795/
+
+GRANTED
+None
+
+ARGUED
+30-10-2001
+
+DECIDED
+16-04-2002
+
+ADVOCATE NAME
+Paul D. Clement
+ADVOCATE LINK
+https://www.oyez.org/advocates/paul_d_clement
+ADVOCATE DESCRIPTION
+Department of Justice, argued the cause for the petitioners
+
+ADVOCATE NAME
+H. Louis Sirkin
+ADVOCATE LINK
+https://www.oyez.org/advocates/h_louis_sirkin
+ADVOCATE DESCRIPTION
+Argued the cause for the respondents

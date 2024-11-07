@@ -1,0 +1,104 @@
+TITLE
+Whole Woman’s Health v. Hellerstedt
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/579/15-274/
+
+SYLLABUS VALUE
+Syllabus
+SYLLABUS LINK
+https://supreme.justia.com/cases/federal/us/579/15-274/
+
+OYEZ URL
+https://www.oyez.org/cases/2015/15-274
+
+DELIVERED BY
+Stephen G. Breyer
+OPINION OF THE COURT
+https://supreme.justia.com/cases/federal/us/579/15-274/
+
+JUSTICE
+Ruth Bader Ginsburg
+TYPE OF OPINION
+Concurring opinion
+LINK
+https://supreme.justia.com/cases/federal/us/579/15-274/
+
+JUSTICE
+Samuel A. Alito, Jr.
+TYPE OF OPINION
+Dissenting opinion
+LINK
+https://supreme.justia.com/cases/federal/us/579/15-274/
+
+JUSTICE
+Clarence Thomas
+TYPE OF OPINION
+Dissenting opinion
+LINK
+https://supreme.justia.com/cases/federal/us/579/15-274/
+
+CONTENT
+<p>In 2013, the Texas Legislature passed House Bill 2 (H.B. 2), which contained several provisions related to abortions. One such provision required that any physician performing an abortion have admitting privileges at a hospital within 30 miles of where the abortion was performed, and another provision required that all abortion clinics comply with standards for ambulatory surgical centers. The petitioners are a group of abortion providers who sued the State of Texas seeking to invalidate those provisions in H.B. 2 as they relate to facilities in McAllen and El Paso. The petitioners argued that H.B. 2 denied equal protection, unlawfully delegated lawmaking authority, and constituted arbitrary and unreasonable state action. The district court dismissed the equal protection, unlawful delegation, and arbitrary and unreasonable state action claims and granted declaratory and injunctive relief against the enforcement of the two contested provisions of H.B. 2. The U.S. Court of Appeals for the Fifth Circuit affirmed the district court’s dismissal of the equal protection, unlawful delegation, and arbitrary and unreasonable state action claims and partially reversed the injunctions because the plaintiffs failed to show that they placed a substantial burden in the path of a woman seeking an abortion.</p>
+
+
+QUESTION
+<p>Should a court's "substantial burden" analysis take into account the extent to which laws that restrict access to abortion services actually serve the government's stated interest in promoting health?</p>
+
+
+CONCLUSION
+<p>In applying the substantial burden test, courts must weigh the extent to which the laws in question actually serve the stated government interest against the burden they impose. Justice Stephen G. Breyer delivered the opinion for the 5-3 majority, which held that the provisions of H.B. 2 at issue do not confer medical benefits that are sufficient to justify the burdens they impose on women seeking to exercise their constitutional right to an abortion. Therefore, the provisions unconstitutionally impose an undue burden. The Court held that the judicial review of such statutes need not be wholly deferential to the legislative fact-finding, especially when the factual record before the district court contradicted it. In this case, the evidence presented before the district court showed that the admitting privileges requirement of H.B. 2 did not advance the state’s interest in protecting women’s health but did place a substantial burden in the path of a woman seeking an abortion by forcing about half of the state’s abortion clinics to close. This additional layer of regulation provided no further protections than those already in place. Similarly, the requirement that abortion clinics meet the standards for ambulatory surgical centers did not appreciably lower the risks of abortions compared to those performed in non-surgical centers. These requirements were so tangentially related to the actual procedures involved in an abortion that they were essentially arbitrary. If these requirements took effect, only seven or eight facilities in the entire state would be able to function, which is in and of itself a substantial burden on women seeking abortions because those remaining facilities would not be able to meet the demand. The Court also held that the petitioners were not precluded from challenging the provisions as they were applied despite previous litigation on whether the provisions were unconstitutional on their face, especially given the evidence about how their enforcement had actually affected abortion access across the state.</p>
+<p>In her concurrence, Justice Ruth Bader Ginsburg wrote that modern abortions are so safe relative to other medical procedures, including childbirth itself, that any law that made accessing abortions more difficult in the name of safety could not pass judicial review.</p>
+<p>Justice Clarence Thomas wrote a dissent in which he argued that the majority opinion bent the rules of judicial scrutiny and misinterpreted precedent to reach its conclusion. He argued that this case should never have made it to the Supreme Court because the Court normally did not allow suits by third parties to vindicate the rights of others. Additionally, the majority opinion misconstrued the undue burden test as requiring courts to apply a standard of review similar to strict scrutiny in assessing laws that regulate abortions, despite the fact that there was no precedential support for that level of scrutiny in these cases. By adding further tiers to the levels of judicial scrutiny, the majority created a test that was a “meaningless formalism” and that provided little guidance to lower courts because the result is based on whether a right is favored instead of being actually enumerated in the Constitution. In his separate dissent, Justice Samuel A. Alito, Jr. wrote that the Court should not have reached the substantive issues of this case because the claims should have been barred as already litigated based on the outcome of the facial challenges to the provisions, which arose from the same set of operative facts. If the lower court’s decision was wrong as a matter of law, the petitioners could have appealed on that basis, but the strategic decision not to do so had consequences, and the majority opinion should have properly applied the well-established doctrine of claim preclusion. Even if the claims were not precluded, the petitioners did not meet their burden to show that the provisions in question affect a large fraction of Texan women. The fact that some clinics closed is evidence of a correlation with the provisions, not causation. Additionally, the petitioners did not prove that the closure of some clinics would actually affect the number of women able to access abortions, especially since many abortion clinics operated below capacity. Even if those provisions were problematic, the majority erred in declaring them completely unconstitutional when they could and should be upheld in any area in which they did not impose an undue burden. Chief Justice John G. Roberts, Jr. and Justice Thomas joined in the dissent.</p>
+<p><em>Learn more about the Supreme Court and abortion law in <a href="http://projects.oyez.org/body-politic">Body Politic</a>, a nonpartisan Oyez resource.</em></p>
+
+
+PETITIONER
+Whole Woman’s Health, et al.
+
+RESPONDENT
+John Hellerstedt, Commissioner, Texas Department of State Health Services, et al.
+
+DOCKET NUMBER
+15-274
+
+DECIDED BY
+Roberts Court (2016-2017)
+
+LOWER COURT
+United States Court of Appeals for the Fifth Circuit
+
+CITATION TEXT
+579 US __ (2016)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/579/15-274/
+
+GRANTED
+13-11-2015
+
+ARGUED
+02-03-2016
+
+DECIDED
+27-06-2016
+
+ADVOCATE NAME
+Stephanie Toti
+ADVOCATE LINK
+https://www.oyez.org/advocates/stephanie_toti
+ADVOCATE DESCRIPTION
+for the petitioners
+
+ADVOCATE NAME
+Donald B. Verrilli, Jr.
+ADVOCATE LINK
+https://www.oyez.org/advocates/donald_b_verrilli_jr
+ADVOCATE DESCRIPTION
+Solicitor General, for the United States as amicus curiae, for the petitioners
+
+ADVOCATE NAME
+Scott A. Keller
+ADVOCATE LINK
+https://www.oyez.org/advocates/scott_a_keller
+ADVOCATE DESCRIPTION
+for the respondents

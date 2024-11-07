@@ -1,0 +1,61 @@
+TITLE
+Katzenbach v. McClung
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/379/294/
+
+SYLLABUS VALUE
+Syllabus
+SYLLABUS LINK
+https://supreme.justia.com/cases/federal/us/379/294/
+
+OYEZ URL
+https://www.oyez.org/cases/1964/543
+
+DELIVERED BY
+None
+OPINION OF THE COURT
+None
+
+CONTENT
+<p>Ollie McClung argued that his restaurant could not be prohibited from discriminating against African Americans because Congress did not have power under the Commerce Clause to enact the Civil Rights Act of 1964. His restaurant, Ollie's Barbecue, was located on a major road in Birmingham, Alabama and was close to an interstate highway. Half of its food came from outside Alabama, although its suppliers were local. It served a meaningful number of customers from outside the state.</p>
+<p>He argued that his business was small and had no impact on interstate commerce, and that he did provide limited services to African Americans. McClung prevailed in federal district court and received an injunction barring the enforcement of the Civil Rights Act against Ollie's Barbecue. </p>
+
+
+QUESTION
+<p>Can the Civil Rights Act of 1964 prohibit discrimination against African Americans by a restaurant?</p>
+
+
+CONCLUSION
+<p>Federal laws like the Civil Rights Act of 1964 apply not only to restaurants that serve interstate travelers, but also to restaurants that use food that has traveled in interstate commerce, which must provide fully equal access to African Americans. </p>
+<p>In a unanimous decision authored by Justice Clark, the Court held McClung could be barred from discriminating against African Americans under the Civil Rights Act of 1964. The Court reasoned that discrimination in restaurants posed significant burdens on "the interstate flow of food and upon the movement on products generally." Furthermore, discrimination also posed restrictions on blacks who traveled from state to state. The Court concluded that the Civil Rights Act was a rational way to protect interstate commerce because it could be expected to reduce the discrimination that undermined it. </p>
+
+
+PETITIONER
+Katzenbach
+
+RESPONDENT
+McClung
+
+DOCKET NUMBER
+543
+
+DECIDED BY
+Warren Court (1962-1965)
+
+LOWER COURT
+None
+
+CITATION TEXT
+379 US 294 (1964)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/379/543/
+
+GRANTED
+None
+
+ARGUED
+05-10-1964
+
+DECIDED
+14-12-1964

@@ -246,15 +246,16 @@ def format_case_meta(case_json: Dict[str, str], case_data: List[str]) -> None:
         case_data.append(NONE_VALUE)
         case_data.append('')
 
-    for advocate in case_json['advocates']:
-        if advocate:
-            case_data.append('ADVOCATE NAME')
-            case_data.append(f'{advocate['advocate']['name']}')
-            case_data.append('ADVOCATE LINK')
-            case_data.append(f'https://www.oyez.org/advocates/{advocate['advocate']['identifier']}')
-            case_data.append('ADVOCATE DESCRIPTION')
-            case_data.append(f'{advocate['advocate_description']}')
-            case_data.append('')
+    if case_json['advocates']:
+        for advocate in case_json['advocates']:
+            if advocate and advocate['advocate']:
+                case_data.append('ADVOCATE NAME')
+                case_data.append(f'{advocate['advocate']['name']}')
+                case_data.append('ADVOCATE LINK')
+                case_data.append(f'https://www.oyez.org/advocates/{advocate['advocate']['identifier']}')
+                case_data.append('ADVOCATE DESCRIPTION')
+                case_data.append(f'{advocate['advocate_description']}')
+                case_data.append('')
 
 
 def main() -> None:

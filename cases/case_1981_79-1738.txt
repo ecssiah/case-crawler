@@ -1,0 +1,80 @@
+TITLE
+Nixon v. Fitzgerald
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/457/731/
+
+SYLLABUS VALUE
+Syllabus
+SYLLABUS LINK
+https://supreme.justia.com/cases/federal/us/457/731/
+
+OYEZ URL
+https://www.oyez.org/cases/1981/79-1738
+
+DELIVERED BY
+None
+OPINION OF THE COURT
+None
+
+CONTENT
+<p>In 1968, Fitzgerald, then a civilian analyst with the United States Air Force, testified before a congressional committee about inefficiencies and cost overruns in the production of the C-5A transport plane. Roughly one year later he was fired, an action for which President Nixon took responsibility. Fitzgerald then sued Nixon for damages after the Civil Service Commission concluded that his dismissal was unjust.</p>
+
+
+QUESTION
+<p>Was the President immune from prosecution in a civil suit?</p>
+
+
+CONCLUSION
+<p>Yes. The Court held that the President "is entitled to absolute immunity from damages liability predicated on his official acts." This sweeping immunity, argued Justice Powell, was a function of the "President's unique office, rooted in the constitutional tradition of separation of powers and supported by our history."</p>
+
+
+PETITIONER
+Nixon
+
+RESPONDENT
+Fitzgerald
+
+DOCKET NUMBER
+79-1738
+
+DECIDED BY
+Burger Court (1981-1986)
+
+LOWER COURT
+United States Court of Appeals for the District of Columbia Circuit
+
+CITATION TEXT
+457 US 731 (1982)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/457/79-1738/
+
+GRANTED
+None
+
+ARGUED
+30-11-1981
+
+DECIDED
+24-06-1982
+
+ADVOCATE NAME
+Herbert J. Miller, Jr.
+ADVOCATE LINK
+https://www.oyez.org/advocates/herbert_j_miller_jr
+ADVOCATE DESCRIPTION
+Argued the cause for the petitioner
+
+ADVOCATE NAME
+Elliot L. Richardson
+ADVOCATE LINK
+https://www.oyez.org/advocates/elliot_l_richardson
+ADVOCATE DESCRIPTION
+on behalf of the Petitioners Harlow and Butterfield
+
+ADVOCATE NAME
+John E. Nolan, Jr.
+ADVOCATE LINK
+https://www.oyez.org/advocates/john_e_nolan_jr
+ADVOCATE DESCRIPTION
+Argued the cause for the respondent
