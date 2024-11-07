@@ -1,4 +1,4 @@
-# Case Crawl
+# Case Crawler
 
 Uses oyez-api-wrapper to collect Supreme Court case information.
 
