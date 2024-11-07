@@ -7,6 +7,7 @@ import oyez_api_wrapper
 from urllib.parse import urlparse
 
 
+DELETE_TEMP = False
 NONE_STRING = 'No Value'
 
 
@@ -30,7 +31,7 @@ def parse_url(url: str) -> Dict[str, str]:
         }
 
 
-def process_case(details: Dict[str, str], delete_temp: bool = True) -> None:
+def process_case(details: Dict[str, str]) -> None:
     case_obj = oyez_api_wrapper.court_case(details['term'], details['docket'])
     case_obj.download_court_json('')
 
@@ -45,7 +46,7 @@ def process_case(details: Dict[str, str], delete_temp: bool = True) -> None:
     with open(case_data_path, 'w') as case_data_file:
         case_data_file.write('\n'.join(case_data))
     
-    if delete_temp and os.path.exists(json_path):
+    if DELETE_TEMP and os.path.exists(json_path):
         os.remove(json_path)
 
 
