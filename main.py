@@ -7,7 +7,7 @@ import oyez_api_wrapper
 from urllib.parse import urlparse
 
 
-NONE_VALUE = 'None'
+NONE_STRING = 'No Value'
 
 
 def parse_url(url: str) -> Dict[str, str]:
@@ -73,9 +73,9 @@ def format_case_info(case_json: Dict[str, str], case_data: List[str]) -> None:
 def format_case_opinions(case_json: Dict[str, str], case_data: List[str]) -> None:
     if case_json['written_opinion'] == None:
         case_data.append('SYLLABUS VALUE')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('SYLLABUS LINK')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('')
 
         case_data.append('OYEZ URL')
@@ -83,9 +83,9 @@ def format_case_opinions(case_json: Dict[str, str], case_data: List[str]) -> Non
         case_data.append('')
 
         case_data.append('DELIVERED BY')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('OPINION OF THE COURT')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('')
 
         return
@@ -107,9 +107,9 @@ def format_case_opinions(case_json: Dict[str, str], case_data: List[str]) -> Non
         opinions.remove(syllabus_result)
     else:
         case_data.append('SYLLABUS VALUE')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('SYLLABUS LINK')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('')
 
     case_data.append('OYEZ URL')
@@ -131,9 +131,9 @@ def format_case_opinions(case_json: Dict[str, str], case_data: List[str]) -> Non
         opinions.remove(majority_result)
     else:
         case_data.append('DELIVERED BY')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('OPINION OF THE COURT')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('')
 
     for opinion in opinions:
@@ -174,11 +174,11 @@ def format_case_meta(case_json: Dict[str, str], case_data: List[str]) -> None:
     case_data.append('')
 
     case_data.append('DECIDED BY')
-    case_data.append(f'{case_json['decided_by']['name']}' if case_json['decided_by'] else NONE_VALUE)
+    case_data.append(f'{case_json['decided_by']['name']}' if case_json['decided_by'] else NONE_STRING)
     case_data.append('')
 
     case_data.append('LOWER COURT')
-    case_data.append(f'{case_json['lower_court']['name']}' if case_json['lower_court'] else NONE_VALUE)
+    case_data.append(f'{case_json['lower_court']['name']}' if case_json['lower_court'] else NONE_STRING)
     case_data.append('')
 
     if case_json['citation']['volume']:
@@ -193,13 +193,13 @@ def format_case_meta(case_json: Dict[str, str], case_data: List[str]) -> None:
         case_data.append('')
     else:
         case_data.append('CITATION TEXT')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('CITATION URL')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('')
 
     granted_result = next(
-        (point for point in case_json['timeline'] if point['event'] == 'Granted'), 
+        (timepoint for timepoint in case_json['timeline'] if timepoint['event'] == 'Granted'), 
         None
     )
 
@@ -211,11 +211,11 @@ def format_case_meta(case_json: Dict[str, str], case_data: List[str]) -> None:
         case_data.append('')
     else:
         case_data.append('GRANTED')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('')
 
     argued_result = next(
-        (point for point in case_json['timeline'] if point['event'] == 'Argued'), 
+        (timepoint for timepoint in case_json['timeline'] if timepoint['event'] == 'Argued'), 
         None
     )
 
@@ -227,7 +227,7 @@ def format_case_meta(case_json: Dict[str, str], case_data: List[str]) -> None:
         case_data.append('')
     else:
         case_data.append('ARGUED')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('')
 
     decided_result = next(
@@ -243,7 +243,7 @@ def format_case_meta(case_json: Dict[str, str], case_data: List[str]) -> None:
         case_data.append('')
     else:
         case_data.append('DECIDED')
-        case_data.append(NONE_VALUE)
+        case_data.append(NONE_STRING)
         case_data.append('')
 
     if case_json['advocates']:
