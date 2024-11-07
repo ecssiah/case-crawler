@@ -1,0 +1,87 @@
+TITLE
+Swann v. Charlotte-Mecklenburg Board of Education
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/402/1/
+
+SYLLABUS VALUE
+Syllabus
+SYLLABUS LINK
+https://supreme.justia.com/cases/federal/us/402/1/
+
+OYEZ URL
+https://www.oyez.org/cases/1970/281
+
+DELIVERED BY
+None
+OPINION OF THE COURT
+None
+
+CONTENT
+<p>After the Supreme Court's decision in 1954 in Brown v. Board of Education, little progress had been made in desegregating public schools. One example was the Charlotte-Mecklenburg, North Carolina, system in which approximately 14,000 black students attended schools that were either totally black or more than 99 percent black. Lower courts had experimented with a number of possible solutions when the case reached the Supreme Court.</p>
+
+
+QUESTION
+<p>Were federal courts constitutionally authorized to oversee and produce remedies for state-imposed segregation?</p>
+
+
+CONCLUSION
+<p>In a unanimous decision, the Court held that once violations of previous mandates directed at desegregating schools had occurred, the scope of district courts' equitable powers to remedy past wrongs were broad and flexible. The Court ruled that 1) remedial plans were to be judged by their effectiveness, and the use of mathematical ratios or quotas were legitimate "starting points" for solutions; 2) predominantly or exclusively black schools required close scrutiny by courts; 3) non-contiguous attendance zones, as interim corrective measures, were within the courts' remedial powers; and 4) no rigid guidelines could be established concerning busing of students to particular schools.</p>
+
+
+PETITIONER
+Swann
+
+RESPONDENT
+Charlotte-Mecklenburg Board of Education
+
+DOCKET NUMBER
+281
+
+DECIDED BY
+Burger Court (1970-1971)
+
+LOWER COURT
+United States Court of Appeals for the Fourth Circuit
+
+CITATION TEXT
+402 US 1 (1971)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/402/281/
+
+GRANTED
+None
+
+ARGUED
+12-10-1970
+
+DECIDED
+20-04-1971
+
+ADVOCATE NAME
+Julius LeVonne Chambers
+ADVOCATE LINK
+https://www.oyez.org/advocates/julius_levonne_chambers
+ADVOCATE DESCRIPTION
+for petitioner
+
+ADVOCATE NAME
+Erwin N. Griswold
+ADVOCATE LINK
+https://www.oyez.org/advocates/erwin_n_griswold
+ADVOCATE DESCRIPTION
+Solicitor General, US Department of Justice, for the United States as amicus curiae
+
+ADVOCATE NAME
+William J. Waggoner
+ADVOCATE LINK
+https://www.oyez.org/advocates/william_j_waggoner
+ADVOCATE DESCRIPTION
+for respondent
+
+ADVOCATE NAME
+James M. Nabrit, III
+ADVOCATE LINK
+https://www.oyez.org/advocates/james_m_nabrit_iii
+ADVOCATE DESCRIPTION
+for petitioner

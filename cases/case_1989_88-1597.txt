@@ -1,0 +1,80 @@
+TITLE
+Board of Education of Westside Community Schools v. Mergens By and Through Mergens
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/496/226/
+
+SYLLABUS VALUE
+Syllabus
+SYLLABUS LINK
+https://supreme.justia.com/cases/federal/us/496/226/
+
+OYEZ URL
+https://www.oyez.org/cases/1989/88-1597
+
+DELIVERED BY
+None
+OPINION OF THE COURT
+None
+
+CONTENT
+<p>The school administration at Westside High School denied permission to a group of students to form a Christian club with the same privileges and meeting terms as other Westside after-school student clubs. In addition to citing the Establishment Clause, Westside refused the club's formation because it lacked a faculty sponsor. When the school board upheld the administration's denial, Mergens and several other students sued. The students alleged that Westside's refusal violated the Equal Access Act, which requires that schools in receipt of federal funds provide "equal access" to student groups seeking to express "religious, political, philosophical, or other content" messages. On appeal from an adverse District Court ruling, the Court of Appeals found in favor of the students. The Supreme Court granted Westside certiorari.</p>
+
+
+QUESTION
+<p>Was Westside's prohibition against the formation of a Christian club consistent with the Establishment Clause, thereby rendering the Equal Access Act unconstitutional?</p>
+
+
+CONCLUSION
+<p>No. In distinguishing between "curriculum" and "noncurriculum student groups," the Court held that since Westside permitted other noncurricular clubs, it was prohibited under the Equal Access Act from denying equal access to any after-school club based on the content of its speech. The proposed Christian club would be a noncurriculum group since no other course required students to become its members, its subject matter would not actually be taught in classes, it did not concern the school's cumulative body of courses, and its members would not receive academic credit for their participation. The Court added that the Equal Access Act was constitutional because it served an overriding secular purpose by prohibiting discrimination on the basis of philosophical, political, or other types of speech. As such, the Act protected the Christian club's formation even if its members engaged in religious discussions.</p>
+
+
+PETITIONER
+BOE of Westside Community Schools
+
+RESPONDENT
+Mergens By and Through Mergens
+
+DOCKET NUMBER
+88-1597
+
+DECIDED BY
+Rehnquist Court (1988-1990)
+
+LOWER COURT
+United States Court of Appeals for the Eighth Circuit
+
+CITATION TEXT
+496 US 226 (1990)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/496/88-1597/
+
+GRANTED
+None
+
+ARGUED
+09-01-1990
+
+DECIDED
+04-06-1990
+
+ADVOCATE NAME
+Kenneth W. Starr
+ADVOCATE LINK
+https://www.oyez.org/advocates/kenneth_w_starr
+ADVOCATE DESCRIPTION
+Argued the cause for the United States
+
+ADVOCATE NAME
+Jay Alan Sekulow
+ADVOCATE LINK
+https://www.oyez.org/advocates/jay_alan_sekulow
+ADVOCATE DESCRIPTION
+Argued the cause for the private respondents
+
+ADVOCATE NAME
+Allen E. Daubman
+ADVOCATE LINK
+https://www.oyez.org/advocates/allen_e_daubman
+ADVOCATE DESCRIPTION
+Argued the cause for the petitioners

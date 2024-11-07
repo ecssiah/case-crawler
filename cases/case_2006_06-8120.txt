@@ -1,0 +1,74 @@
+TITLE
+Brendlin v. California
+
+JUSTIA
+https://supreme.justia.com/cases/federal/us/551/249/
+
+SYLLABUS VALUE
+Syllabus
+SYLLABUS LINK
+https://supreme.justia.com/cases/federal/us/551/249/
+
+OYEZ URL
+https://www.oyez.org/cases/2006/06-8120
+
+DELIVERED BY
+David H. Souter
+OPINION OF THE COURT
+https://supreme.justia.com/cases/federal/us/551/249/
+
+CONTENT
+<p>Police stopped Karen Simeroth's car for having expired registration tabs. Bruce Brendlin, who had a warrant out for his arrest, was riding in the passenger seat. Police found methamphetamine, marijuana, and drug paraphernalia in the car and on Simeroth's person. In a California trial court, Brendlin filed a motion to suppress the evidence obtained at the traffic stop, claiming that the stop was an unreasonable seizure in violation of the Fourth Amendment. The trial court found that Brendlin had never been detained or "seized" within the meaning of the Fourth Amendment. It denied the motion, and Brendlin pleaded guilty to manufacturing methamphetamine. A California Court of Appeal reversed, holding that a traffic stop necessarily results in a Fourth Amendment seizure.</p>
+<p>The California Supreme Court reversed the Court of Appeal and ruled for California. The court held that the driver of the car is the only one detained in a traffic stop. The movement of any passengers is also stopped as a practical matter, but the court considered this merely a necessary byproduct of the detention of the driver. The court held that Brendlin had been free to leave the scene of the traffic stop or to simply ignore the police. Since he was never "seized," however, he could not claim a violation of the Fourth Amendment.</p>
+
+
+QUESTION
+<p>When a vehicle is subject to a traffic stop, is a passenger in the vehicle "detained" for purposes of the Fourth Amendment?</p>
+
+
+CONCLUSION
+<p>Yes. In a unanimous opinion written by Justice David Souter, the Court held that when a vehicle is stopped at a traffic stop, the passenger as well as the driver is seized within the meaning of the Fourth Amendment. The justices said, "We resolve this question by asking whether a reasonable person in Brendlin's position when the car stopped would have believed himself free to 'terminate the encounter' between the police and himself." The Court held that Brendlin would have reasonably believed himself to be intentionally detained and subject to the authority of the police. Thus, he was justified in asserting his Fourth Amendment protection against unreasonable seizure. The Court noted that its ruling would not extend to more incidental restrictions on freedom of movement, such as when motorists are forced to slow down or stop because other vehicles are being detained. To accept the state's arguments, however, would be to "invite police officers to stop cars with passengers regardless of probable cause or reasonable suspicion of anything illegal."</p>
+
+
+PETITIONER
+Bruce Edward Brendlin
+
+RESPONDENT
+California
+
+DOCKET NUMBER
+06-8120
+
+DECIDED BY
+Roberts Court (2006-2009)
+
+LOWER COURT
+Supreme Court of California
+
+CITATION TEXT
+551 US 249 (2007)
+CITATION URL
+https://supreme.justia.com/cases/federal/us/551/06-8120/
+
+GRANTED
+19-01-2007
+
+ARGUED
+23-04-2007
+
+DECIDED
+18-06-2007
+
+ADVOCATE NAME
+Elizabeth M. Campbell
+ADVOCATE LINK
+https://www.oyez.org/advocates/elizabeth_m_campbell
+ADVOCATE DESCRIPTION
+on behalf of Petitioner
+
+ADVOCATE NAME
+Clifford E. Zall
+ADVOCATE LINK
+https://www.oyez.org/advocates/clifford_e_zall
+ADVOCATE DESCRIPTION
+on behalf of Respondent
