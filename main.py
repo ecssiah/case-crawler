@@ -1,7 +1,7 @@
 from datetime import datetime
 import json
 import sys
-from typing import Dict, List, Tuple
+from typing import Dict, List
 import os
 import oyez_api_wrapper
 from urllib.parse import urlparse
