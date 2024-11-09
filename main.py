@@ -49,9 +49,9 @@ class CaseCrawler:
         is_oyez_location = url_parsed.netloc == 'www.oyez.org'
         is_case_entry = len(url_items) == 3 and url_items[0] == 'cases'
 
-        if is_oyez_location and is_case_entry:
-            self.is_valid = True
-            
+        self.is_valid = is_oyez_location and is_case_entry
+
+        if self.is_valid:
             self.term = url_items[1]
             self.docket = url_items[2]
 
@@ -60,6 +60,9 @@ class CaseCrawler:
 
 
     def process_case(self) -> None:
+        if not self.is_valid:
+            return
+        
         case_obj = oyez_api_wrapper.court_case(self.term, self.docket)
         case_obj.download_court_json('')
 
@@ -228,8 +231,7 @@ def main() -> None:
 
     case_crawler = CaseCrawler(url)
 
-    if case_crawler.is_valid:
-        case_crawler.process_case()
+    case_crawler.process_case()
 
 
 if __name__ == '__main__':
