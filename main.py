@@ -7,8 +7,8 @@ import oyez_api_wrapper
 from urllib.parse import urlparse
 
 
-DELETE_TEMP = True
-NONE_STRING = 'NO VALUE'
+DELETE_TEMP = False
+NONE_STRING = 'NO_VALUE'
 
 
 class CaseCrawler:
@@ -93,66 +93,47 @@ class CaseCrawler:
 
 
     def format_case_opinions(self) -> None:
-        if self.case_json['written_opinion']:
-            opinions = [
-                opinion for opinion in self.case_json['written_opinion'] if opinion['type']['value'] != 'case'
-            ]
-            
-            syllabus_result = next(
-                (opinion for opinion in opinions if opinion['type']['value'] == 'syllabus'), 
-                None
-            )
+        majority = None
+        syllabus = None
+        separate_opinions = []
 
-            self.case_data.append('SYLLABUS VALUE')
-            self.case_data.append(f'{syllabus_result['type']['label']}' if syllabus_result else NONE_STRING)
-            self.case_data.append('SYLLABUS LINK')
-            self.case_data.append(f'{syllabus_result['justia_opinion_url']}' if syllabus_result else NONE_STRING)
-            self.case_data.append('')
-
-            if syllabus_result:
-                opinions.remove(syllabus_result)
-
-            self.case_data.append('OYEZ URL')
-            self.case_data.append(self.case_json['href'].replace('api.', 'www.'))
-            self.case_data.append('')
-
-            majority_result = next(
-                (opinion for opinion in opinions if opinion['type']['value'] == 'majority'), 
-                None
-            )
-
-            self.case_data.append('DELIVERED BY')
-            self.case_data.append(f'{majority_result['judge_full_name']}' if majority_result else NONE_STRING)
-            self.case_data.append('OPINION OF THE COURT')
-            self.case_data.append(f'{syllabus_result['justia_opinion_url']}' if majority_result else NONE_STRING)
-            self.case_data.append('')
+        opinions = self.case_json['written_opinion'] if self.case_json['written_opinion'] else []
         
-            if majority_result: 
-                opinions.remove(majority_result) 
+        for opinion in opinions:
+            opinion_type = opinion['type']['value']
 
-            for opinion in opinions:
-                self.case_data.append('JUSTICE')
-                self.case_data.append(f'{opinion['judge_full_name']}')
-                self.case_data.append('TYPE OF OPINION')
-                self.case_data.append(f'{opinion['type']['label']}')
-                self.case_data.append('LINK')
-                self.case_data.append(f'{opinion['justia_opinion_url']}')
-                self.case_data.append('')
-        else:
-            self.case_data.append('SYLLABUS VALUE')
-            self.case_data.append(NONE_STRING)
-            self.case_data.append('SYLLABUS LINK')
-            self.case_data.append(NONE_STRING)
-            self.case_data.append('')
+            if opinion_type == 'syllabus':
+                syllabus = opinion
+                opinions.remove(opinion)
+            elif opinion_type == 'majority':
+                majority = opinion
+                opinions.remove(opinion)
+            elif opinion_type != 'case':
+                separate_opinions.append(opinion)
+        
+        self.case_data.append('SYLLABUS VALUE')
+        self.case_data.append(f'{syllabus['type']['label']}' if syllabus else NONE_STRING)
+        self.case_data.append('SYLLABUS LINK')
+        self.case_data.append(f'{syllabus['justia_opinion_url']}/#tab-opinion-{syllabus['justia_opinion_id']}' if syllabus else NONE_STRING)
+        self.case_data.append('')
 
-            self.case_data.append('OYEZ URL')
-            self.case_data.append(self.case_json['href'].replace('api.', 'www.'))
-            self.case_data.append('')
+        self.case_data.append('OYEZ URL')
+        self.case_data.append(self.case_json['href'].replace('api.', 'www.'))
+        self.case_data.append('')
 
-            self.case_data.append('DELIVERED BY')
-            self.case_data.append(NONE_STRING)
-            self.case_data.append('OPINION OF THE COURT')
-            self.case_data.append(NONE_STRING)
+        self.case_data.append('DELIVERED BY')
+        self.case_data.append(f'{majority['judge_full_name']}' if majority else NONE_STRING)
+        self.case_data.append('OPINION OF THE COURT')
+        self.case_data.append(f'{majority['justia_opinion_url']}/#tab-opinion-{majority['justia_opinion_id']}' if majority else NONE_STRING)
+        self.case_data.append('')
+
+        for opinion in separate_opinions:
+            self.case_data.append('JUSTICE')
+            self.case_data.append(f'{opinion['judge_full_name']}')
+            self.case_data.append('TYPE OF OPINION')
+            self.case_data.append(f'{opinion['type']['label']}')
+            self.case_data.append('LINK')
+            self.case_data.append(f'{opinion['justia_opinion_url']}/#tab-opinion-{opinion['justia_opinion_id']}')
             self.case_data.append('')
 
 
@@ -208,53 +189,9 @@ class CaseCrawler:
             self.case_data.append(NONE_STRING)
             self.case_data.append('')
 
-        granted_result = next(
-            (timepoint for timepoint in self.case_json['timeline'] if timepoint['event'] == 'Granted'), 
-            None
-        )
-
-        if granted_result:
-            granted_date = datetime.fromtimestamp(granted_result['dates'][0]).strftime('%d-%m-%Y')
-
-            self.case_data.append('GRANTED')
-            self.case_data.append(f'{granted_date}')
-            self.case_data.append('')
-        else:
-            self.case_data.append('GRANTED')
-            self.case_data.append(NONE_STRING)
-            self.case_data.append('')
-
-        argued_result = next(
-            (timepoint for timepoint in self.case_json['timeline'] if timepoint['event'] == 'Argued'), 
-            None
-        )
-
-        if argued_result:
-            argued_date = datetime.fromtimestamp(argued_result['dates'][0]).strftime('%d-%m-%Y')
-
-            self.case_data.append('ARGUED')
-            self.case_data.append(f'{argued_date}')
-            self.case_data.append('')
-        else:
-            self.case_data.append('ARGUED')
-            self.case_data.append(NONE_STRING)
-            self.case_data.append('')
-
-        decided_result = next(
-            (timepoint for timepoint in self.case_json['timeline'] if timepoint['event'] == 'Decided'), 
-            None
-        )
-
-        if decided_result:
-            decided_date = datetime.fromtimestamp(decided_result['dates'][0]).strftime('%d-%m-%Y')
-
-            self.case_data.append('DECIDED')
-            self.case_data.append(f'{decided_date}')
-            self.case_data.append('')
-        else:
-            self.case_data.append('DECIDED')
-            self.case_data.append(NONE_STRING)
-            self.case_data.append('')
+        self.format_timepoint('Granted')
+        self.format_timepoint('Argued')
+        self.format_timepoint('Decided')
 
         if self.case_json['advocates']:
             for advocate in self.case_json['advocates']:
@@ -266,6 +203,24 @@ class CaseCrawler:
                     self.case_data.append('ADVOCATE DESCRIPTION')
                     self.case_data.append(f'{advocate['advocate_description']}')
                     self.case_data.append('')
+
+
+    def format_timepoint(self, event: str) -> None:
+        result = next(
+            (timepoint for timepoint in self.case_json['timeline'] if timepoint['event'] == event), 
+            None
+        )
+
+        if result:
+            date = datetime.fromtimestamp(result['dates'][0]).strftime('%d-%m-%Y')
+
+            self.case_data.append(event.upper())
+            self.case_data.append(f'{date}')
+            self.case_data.append('')
+        else:
+            self.case_data.append(event.upper())
+            self.case_data.append(NONE_STRING)
+            self.case_data.append('')
 
 
 def main() -> None:
