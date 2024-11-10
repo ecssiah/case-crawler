@@ -12,11 +12,11 @@ NONE_STRING = 'NO_VALUE'
 
 
 class CaseCrawler:
+    is_valid: bool
+
     url: str
     term: str
     docket: str
-
-    is_valid: bool
 
     case_json_path: str
     case_data_path: str
@@ -26,11 +26,11 @@ class CaseCrawler:
 
 
     def __init__(self, url: str) -> None:
+        self.is_valid = False
+
         self.url = url
         self.term = NONE_STRING
         self.docket = NONE_STRING
-
-        self.is_valid = False
 
         self.case_json_path = ''
         self.case_data_path = ''
@@ -101,8 +101,8 @@ class CaseCrawler:
 
 
     def format_case_opinions(self) -> None:
-        majority = None
         syllabus = None
+        majority = None
         separate_opinions = []
 
         opinions = self.case_json['written_opinion'] if self.case_json['written_opinion'] else []
@@ -112,10 +112,8 @@ class CaseCrawler:
 
             if opinion_type == 'syllabus':
                 syllabus = opinion
-                opinions.remove(opinion)
             elif opinion_type == 'majority':
                 majority = opinion
-                opinions.remove(opinion)
             elif opinion_type != 'case':
                 separate_opinions.append(opinion)
         
@@ -135,13 +133,13 @@ class CaseCrawler:
         self.case_data.append(f'{majority['justia_opinion_url']}/#tab-opinion-{majority['justia_opinion_id']}' if majority else NONE_STRING)
         self.case_data.append('')
 
-        for opinion in separate_opinions:
+        for separate_opinion in separate_opinions:
             self.case_data.append('JUSTICE')
-            self.case_data.append(f'{opinion['judge_full_name']}')
+            self.case_data.append(f'{separate_opinion['judge_full_name']}')
             self.case_data.append('TYPE OF OPINION')
-            self.case_data.append(f'{opinion['type']['label']}')
+            self.case_data.append(f'{separate_opinion['type']['label']}')
             self.case_data.append('LINK')
-            self.case_data.append(f'{opinion['justia_opinion_url']}/#tab-opinion-{opinion['justia_opinion_id']}')
+            self.case_data.append(f'{separate_opinion['justia_opinion_url']}/#tab-opinion-{separate_opinion['justia_opinion_id']}')
             self.case_data.append('')
 
 
