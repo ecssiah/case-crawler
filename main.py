@@ -56,7 +56,7 @@ class CaseCrawler:
             self.docket = url_items[2]
 
             self.case_json_path = f'oyez_{self.term}_{self.docket}.json'
-            self.case_data_path = f'cases/case_{self.term}_{self.docket}.txt'
+            self.case_data_path = f'case_{self.term}_{self.docket}.txt'
 
 
     def process_case(self) -> None:
@@ -66,16 +66,13 @@ class CaseCrawler:
         case_obj = oyez_api_wrapper.court_case(self.term, self.docket)
         case_obj.download_court_json('')
 
-        with open(self.case_json_path, 'r') as json_file:
+        os.rename(self.case_json_path, f'data/{self.case_json_path}')
+
+        with open(f'data/{self.case_json_path}', 'r') as json_file:
             self.case_json = json.load(json_file)
 
         self.get_case_data()
-
-        with open(self.case_data_path, 'w') as case_data_file:
-            case_data_file.write('\n'.join(self.case_data))
-        
-        if DELETE_TEMP and os.path.exists(self.case_json_path):
-            os.remove(self.case_json_path)
+        self.write_case_data()
 
     
     def get_case_data(self) -> None:
@@ -83,6 +80,14 @@ class CaseCrawler:
         self.format_case_opinions()
         self.format_case_body()
         self.format_case_meta()
+
+
+    def write_case_data(self) -> None:
+        with open(f'data/{self.case_data_path}', 'w') as case_data_file:
+            case_data_file.write('\n'.join(self.case_data))
+        
+        if DELETE_TEMP and os.path.exists(f'data/{self.case_json_path}'):
+            os.remove(f'data/{self.case_json_path}')
 
 
     def format_case_info(self) -> None:

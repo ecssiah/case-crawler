@@ -40,5 +40,4 @@ coverage.xml
 
 # Jupyter Notebook checkpoints
 
-cases/
-/oyez_*
+data/
