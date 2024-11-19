@@ -1,9 +1,9 @@
 from datetime import datetime
 import json
-import sys
-from typing import Dict, List
 import os
 import oyez_api_wrapper
+import sys
+from typing import Dict, List
 from urllib.parse import urlparse
 
 
@@ -60,7 +60,7 @@ class CaseCrawler:
 
 
     def process_case(self) -> None:
-        if not self.is_valid:
+        if self.is_valid is False:
             return
         
         case_obj = oyez_api_wrapper.court_case(self.term, self.docket)
@@ -74,12 +74,12 @@ class CaseCrawler:
         self.get_case_data()
         self.write_case_data()
 
-    
+
     def get_case_data(self) -> None:
-        self.format_case_info()
-        self.format_case_opinions()
-        self.format_case_body()
-        self.format_case_meta()
+        self.get_case_info()
+        self.get_case_opinions()
+        self.get_case_body()
+        self.get_case_meta()
 
 
     def write_case_data(self) -> None:
@@ -90,23 +90,23 @@ class CaseCrawler:
             os.remove(f'data/{self.case_json_path}')
 
 
-    def format_case_info(self) -> None:
+    def get_case_info(self) -> None:
         self.case_data.append('TITLE')
-        self.case_data.append(f'{self.case_json['name']}')
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['name']}\n')
 
         self.case_data.append('JUSTIA')
-        self.case_data.append(f'{self.case_json['justia_url']}')
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['justia_url']}\n')
 
 
-    def format_case_opinions(self) -> None:
+    def get_case_opinions(self) -> None:
         syllabus = None
         majority = None
+        opinions = []
         separate_opinions = []
 
-        opinions = self.case_json['written_opinion'] if self.case_json['written_opinion'] else []
-        
+        if self.case_json['written_opinion']:
+            opinions = self.case_json['written_opinion'] 
+
         for opinion in opinions:
             opinion_type = opinion['type']['value']
 
@@ -116,67 +116,59 @@ class CaseCrawler:
                 majority = opinion
             elif opinion_type != 'case':
                 separate_opinions.append(opinion)
-        
+
         self.case_data.append('SYLLABUS VALUE')
-        self.case_data.append(f'{syllabus['type']['label']}' if syllabus else NONE_STRING)
+        self.case_data.append(f'{syllabus['type']['label']}\n' if syllabus else f'{NONE_STRING}\n')
+
         self.case_data.append('SYLLABUS LINK')
-        self.case_data.append(f'{syllabus['justia_opinion_url']}/#tab-opinion-{syllabus['justia_opinion_id']}' if syllabus else NONE_STRING)
-        self.case_data.append('')
+        self.case_data.append(f'{syllabus['justia_opinion_url']}/#tab-opinion-{syllabus['justia_opinion_id']}\n' if syllabus else f'{NONE_STRING}\n')
 
         self.case_data.append('OYEZ URL')
-        self.case_data.append(self.case_json['href'].replace('api.', 'www.'))
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['href'].replace('api.', 'www.')}\n')
 
         self.case_data.append('DELIVERED BY')
-        self.case_data.append(f'{majority['judge_full_name']}' if majority else NONE_STRING)
+        self.case_data.append(f'{majority['judge_full_name']}\n' if majority else f'{NONE_STRING}\n')
+
         self.case_data.append('OPINION OF THE COURT')
-        self.case_data.append(f'{majority['justia_opinion_url']}/#tab-opinion-{majority['justia_opinion_id']}' if majority else NONE_STRING)
-        self.case_data.append('')
+        self.case_data.append(f'{majority['justia_opinion_url']}/#tab-opinion-{majority['justia_opinion_id']}\n' if majority else f'{NONE_STRING}\n')
 
         for separate_opinion in separate_opinions:
             self.case_data.append('JUSTICE')
-            self.case_data.append(f'{separate_opinion['judge_full_name']}')
+            self.case_data.append(f'{separate_opinion['judge_full_name']}\n')
+
             self.case_data.append('TYPE OF OPINION')
-            self.case_data.append(f'{separate_opinion['type']['label']}')
+            self.case_data.append(f'{separate_opinion['type']['label']}\n')
+
             self.case_data.append('LINK')
-            self.case_data.append(f'{separate_opinion['justia_opinion_url']}/#tab-opinion-{separate_opinion['justia_opinion_id']}')
-            self.case_data.append('')
+            self.case_data.append(f'{separate_opinion['justia_opinion_url']}/#tab-opinion-{separate_opinion['justia_opinion_id']}\n')
 
 
-    def format_case_body(self) -> None:
+    def get_case_body(self) -> None:
         self.case_data.append('CONTENT')
-        self.case_data.append(f'{self.case_json['facts_of_the_case']}')
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['facts_of_the_case']}\n')
 
         self.case_data.append('QUESTION')
-        self.case_data.append(f'{self.case_json['question']}')
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['question']}\n')
 
         self.case_data.append('CONCLUSION')
-        self.case_data.append(f'{self.case_json['conclusion']}')
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['conclusion']}\n')
 
 
-    def format_case_meta(self) -> None:
+    def get_case_meta(self) -> None:
         self.case_data.append('PETITIONER')
-        self.case_data.append(f'{self.case_json['first_party']}')
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['first_party']}\n')
 
         self.case_data.append('RESPONDENT')
-        self.case_data.append(f'{self.case_json['second_party']}')
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['second_party']}\n')
 
         self.case_data.append('DOCKET NUMBER')
-        self.case_data.append(f'{self.case_json['docket_number']}')
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['docket_number']}\n')
 
         self.case_data.append('DECIDED BY')
-        self.case_data.append(f'{self.case_json['decided_by']['name']}' if self.case_json['decided_by'] else NONE_STRING)
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['decided_by']['name']}\n' if self.case_json['decided_by'] else f'{NONE_STRING}\n')
 
         self.case_data.append('LOWER COURT')
-        self.case_data.append(f'{self.case_json['lower_court']['name']}' if self.case_json['lower_court'] else NONE_STRING)
-        self.case_data.append('')
+        self.case_data.append(f'{self.case_json['lower_court']['name']}\n' if self.case_json['lower_court'] else f'{NONE_STRING}\n')
 
         if self.case_json['citation']['volume']:
             volume = self.case_json['citation']['volume']
@@ -184,16 +176,16 @@ class CaseCrawler:
             year = f' ({self.case_json['citation']['year']})' if self.case_json['citation']['year'] else ''
 
             self.case_data.append('CITATION TEXT')
-            self.case_data.append(f'{volume}{page}{year}')
+            self.case_data.append(f'{volume}{page}{year}\n')
+
             self.case_data.append('CITATION URL')
-            self.case_data.append(f'https://supreme.justia.com/cases/federal/us/{volume}/{self.case_json['docket_number']}/')
-            self.case_data.append('')
+            self.case_data.append(f'https://supreme.justia.com/cases/federal/us/{volume}/{self.case_json['docket_number']}/\n')
         else:
             self.case_data.append('CITATION TEXT')
-            self.case_data.append(NONE_STRING)
+            self.case_data.append(f'{NONE_STRING}\n')
+
             self.case_data.append('CITATION URL')
-            self.case_data.append(NONE_STRING)
-            self.case_data.append('')
+            self.case_data.append(f'{NONE_STRING}\n')
 
         self.format_timepoint('Granted')
         self.format_timepoint('Argued')
@@ -203,12 +195,13 @@ class CaseCrawler:
             for advocate in self.case_json['advocates']:
                 if advocate and advocate['advocate']:
                     self.case_data.append('ADVOCATE NAME')
-                    self.case_data.append(f'{advocate['advocate']['name']}')
+                    self.case_data.append(f'{advocate['advocate']['name']}\n')
+
                     self.case_data.append('ADVOCATE LINK')
-                    self.case_data.append(f'https://www.oyez.org/advocates/{advocate['advocate']['identifier']}')
+                    self.case_data.append(f'https://www.oyez.org/advocates/{advocate['advocate']['identifier']}\n')
+
                     self.case_data.append('ADVOCATE DESCRIPTION')
-                    self.case_data.append(f'{advocate['advocate_description']}')
-                    self.case_data.append('')
+                    self.case_data.append(f'{advocate['advocate_description']}\n')
 
 
     def format_timepoint(self, event: str) -> None:
@@ -221,12 +214,10 @@ class CaseCrawler:
             date = datetime.fromtimestamp(result['dates'][0]).strftime('%d-%m-%Y')
 
             self.case_data.append(event.upper())
-            self.case_data.append(f'{date}')
-            self.case_data.append('')
+            self.case_data.append(f'{date}\n')
         else:
             self.case_data.append(event.upper())
-            self.case_data.append(NONE_STRING)
-            self.case_data.append('')
+            self.case_data.append(f'{NONE_STRING}\n')
 
 
 def main() -> None:
