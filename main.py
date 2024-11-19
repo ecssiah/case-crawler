@@ -85,7 +85,7 @@ class CaseCrawler:
     def write_case_data(self) -> None:
         with open(f'data/{self.case_data_path}', 'w') as case_data_file:
             case_data_file.write('\n'.join(self.case_data))
-        
+
         if DELETE_TEMP and os.path.exists(f'data/{self.case_json_path}'):
             os.remove(f'data/{self.case_json_path}')
 
@@ -101,6 +101,7 @@ class CaseCrawler:
     def get_case_opinions(self) -> None:
         syllabus = None
         majority = None
+
         opinions = []
         separate_opinions = []
 
@@ -118,19 +119,31 @@ class CaseCrawler:
                 separate_opinions.append(opinion)
 
         self.case_data.append('SYLLABUS VALUE')
-        self.case_data.append(f'{syllabus['type']['label']}\n' if syllabus else f'{NONE_STRING}\n')
+        if syllabus:
+            self.case_data.append(f'{syllabus['type']['label']}\n')
+        else:
+            self.case_data.append(f'{NONE_STRING}\n')
 
         self.case_data.append('SYLLABUS LINK')
-        self.case_data.append(f'{syllabus['justia_opinion_url']}/#tab-opinion-{syllabus['justia_opinion_id']}\n' if syllabus else f'{NONE_STRING}\n')
+        if syllabus:
+            self.case_data.append(f'{syllabus['justia_opinion_url']}/#tab-opinion-{syllabus['justia_opinion_id']}\n')
+        else:
+            self.case_data.append(f'{NONE_STRING}\n')
 
         self.case_data.append('OYEZ URL')
         self.case_data.append(f'{self.case_json['href'].replace('api.', 'www.')}\n')
 
         self.case_data.append('DELIVERED BY')
-        self.case_data.append(f'{majority['judge_full_name']}\n' if majority else f'{NONE_STRING}\n')
+        if majority:
+            self.case_data.append(f'{majority['judge_full_name']}\n')
+        else:
+            self.case_data.append(f'{NONE_STRING}\n')
 
         self.case_data.append('OPINION OF THE COURT')
-        self.case_data.append(f'{majority['justia_opinion_url']}/#tab-opinion-{majority['justia_opinion_id']}\n' if majority else f'{NONE_STRING}\n')
+        if majority:
+            self.case_data.append(f'{majority['justia_opinion_url']}/#tab-opinion-{majority['justia_opinion_id']}\n')
+        else:
+            self.case_data.append(f'{NONE_STRING}\n')
 
         for separate_opinion in separate_opinions:
             self.case_data.append('JUSTICE')
@@ -165,10 +178,16 @@ class CaseCrawler:
         self.case_data.append(f'{self.case_json['docket_number']}\n')
 
         self.case_data.append('DECIDED BY')
-        self.case_data.append(f'{self.case_json['decided_by']['name']}\n' if self.case_json['decided_by'] else f'{NONE_STRING}\n')
+        if self.case_json['decided_by']:
+            self.case_data.append(f'{self.case_json['decided_by']['name']}\n')
+        else:
+            self.case_data.append(f'{NONE_STRING}\n')
 
         self.case_data.append('LOWER COURT')
-        self.case_data.append(f'{self.case_json['lower_court']['name']}\n' if self.case_json['lower_court'] else f'{NONE_STRING}\n')
+        if self.case_json['lower_court']:
+            self.case_data.append(f'{self.case_json['lower_court']['name']}\n')
+        else:
+            self.case_data(f'{NONE_STRING}\n')
 
         if self.case_json['citation']['volume']:
             volume = self.case_json['citation']['volume']
